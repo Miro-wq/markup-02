@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/styles.css" />
@@ -13,18 +21,20 @@
   <body>
     <header>
       <a href="index.html">
-        <span class="web">web</span>
-        <span class="studio">studio</span>
+        <logo class="web">web</logo>
+        <logo class="studio">studio</logo>
       </a>
-      <nav class="menu-nav">
+      <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Studio</a></li>
-          <li><a href="portfolio.html">Portofolio</a></li>
-          <li><a href="contacts">Contacts</a></li>
+          <li><a href="index.html" class="index">Studio</a></li>
+          <li><a href="portfolio.html" class="portofolio">Portofolio</a></li>
+          <li><a href="contacts" class="contacts">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a href="tel:+110001111111" class="phone-number">+11 (000) 111-11-11</a>
+      <a href="mailto:info@devstudio.com" class="mail-adress"
+        >info@devstudio.com</a
+      >
     </header>
 
     <main>
@@ -39,147 +49,113 @@
           </ul>
         </nav>
       </section>
-      <section>
+      <section class="row-1">
         <ul>
-          <li>
-            <div class="project-card row-1">
-              <img
-                src="images/project-card-1.jpg"
-                alt="bank-app-with-login-form"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Banking App Interface Concept</h3>
-                <p>App</p>
-              </div>
-            </div>
+          <li class="card1">
+            <img
+              src="images/project-card-1.jpg"
+              alt="bank-app-with-login-form"
+              width="360"
+              height="300"
+            />
+            <h3>Banking App Interface Concept</h3>
+            <p>App</p>
           </li>
-          <li>
-            <div class="project-card row-1">
-              <img
-                src="images/project-card-2.jpg"
-                alt="smartphone-scanning-an-qr-code"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Cashless Payment</h3>
-                <p>Marketing</p>
-              </div>
-            </div>
+          <li class="card2">
+            <img
+              src="images/project-card-2.jpg"
+              alt="smartphone-scanning-an-qr-code"
+              width="360"
+              height="300"
+            />
+            <h3>Cashless Payment</h3>
+            <p>Marketing</p>
           </li>
-          <li>
-            <div class="project-card row-1">
-              <img
-                src="images/project-card-3.jpg"
-                alt="laptop-screen-and-smartphone-showing-same-interface"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Meditation App</h3>
-                <p>App</p>
-              </div>
-            </div>
+          <li class="card3">
+            <img
+              src="images/project-card-3.jpg"
+              alt="laptop-screen-and-smartphone-showing-same-interface"
+              width="360"
+              height="300"
+            />
+            <h3>Meditation App</h3>
+            <p>App</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="row-2">
         <ul>
-          <li>
-            <div class="project-card row-2">
-              <img
-                src="images/project-card-4.jpg"
-                alt="someone-driving"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Taxi Service</h3>
-                <p>Marketing</p>
-              </div>
-            </div>
+          <li class="card4">
+            <img
+              src="images/project-card-4.jpg"
+              alt="someone-driving"
+              width="360"
+              height="300"
+            />
+            <h3>Taxi Service</h3>
+            <p>Marketing</p>
           </li>
-          <li>
-            <div class="project-card row-2">
-              <img
-                src="images/project-card-5.jpg"
-                alt="smartphone-wallpaper"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Screen Illustrations</h3>
-                <p>Design</p>
-              </div>
-            </div>
+          <li class="card5">
+            <img
+              src="images/project-card-5.jpg"
+              alt="smartphone-wallpaper"
+              width="360"
+              height="300"
+            />
+            <h3>Screen Illustrations</h3>
+            <p>Design</p>
           </li>
-          <li>
-            <div class="project-card row-2">
-              <img
-                src="images/project-card-6.jpg"
-                alt="young-girl-listening-something-on-headphones"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Online Courses</h3>
-                <p>Marketing</p>
-              </div>
-            </div>
+          <li class="card6">
+            <img
+              src="images/project-card-6.jpg"
+              alt="young-girl-listening-something-on-headphones"
+              width="360"
+              height="300"
+            />
+            <h3>Online Courses</h3>
+            <p>Marketing</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="row3">
         <ul>
-          <li>
-            <div class="project-card row-3">
-              <img
-                src="images/project-card-7.jpg"
-                alt="different-scenes-on-a-screen"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Instagram Stories Concept</h3>
-                <p>Design</p>
-              </div>
-            </div>
+          <li class="card7">
+            <img
+              src="images/project-card-7.jpg"
+              alt="different-scenes-on-a-screen"
+              width="360"
+              height="300"
+            />
+            <h3>Instagram Stories Concept</h3>
+            <p>Design</p>
           </li>
-          <li>
-            <div class="project-card row-3">
-              <img
-                src="images/project-card-8.jpg"
-                alt="bag-with-groceries"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Organic Food</h3>
-                <p>Web Site</p>
-              </div>
-            </div>
+          <li class="card8">
+            <img
+              src="images/project-card-8.jpg"
+              alt="bag-with-groceries"
+              width="360"
+              height="300"
+            />
+            <h3>Organic Food</h3>
+            <p>Web Site</p>
           </li>
-          <li>
-            <div class="project-card row-3">
-              <img
-                src="images/project-card-9.jpg"
-                alt="a-cup-of-coffee"
-                width="360"
-                height="300"
-              />
-              <div class="project-info">
-                <h3>Fresh Coffee</h3>
-                <p>Web Site</p>
-              </div>
-            </div>
+          <li class="card9">
+            <img
+              src="images/project-card-9.jpg"
+              alt="a-cup-of-coffee"
+              width="360"
+              height="300"
+            />
+            <h3>Fresh Coffee</h3>
+            <p>Web Site</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <a href="webstudio">Webstudio</a>
+      <a href="index.html">
+        <logo class="web">web</logo>
+        <logo class="studio">studio</logo>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
