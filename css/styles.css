@@ -1,8 +1,7 @@
 :root {
   --primary-color: #fefefe;
   --accent-color-text: #2e2f42;
-  --color-span-web: #4d5ae5;
-  --color-span-studio: #2e2f42;
+  --color-iris: #4d5ae5;
   --link-color: #f4f4fd;
   --link-color-text: #4d5ae5;
   --link-color-hover: #404bbf;
@@ -144,10 +143,10 @@ main section.team ul {
 }
 
 footer {
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: var(--accent-color-text);
+  color: var(--primary-color);
 }
 footer .web,
 footer .studio {
@@ -164,7 +163,7 @@ footer .web {
 }
 
 footer .studio {
-  color: #2e2f42;
+  color: #fefefe;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
