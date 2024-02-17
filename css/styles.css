@@ -18,10 +18,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* .primary-page {
-  color: var();
-} */
-
 header {
   background-color: #e7e9fc;
   display: flex;
@@ -70,23 +66,25 @@ header .studio {
   gap: 40px;
   font-weight: 500;
   display: flex;
-  color: var(--accent-color-text);
   display: inline;
 }
 
-.main-nav ul li a.index {
+.index {
   width: 48px;
   height: 24px;
+  color: var(--accent-color-text);
 }
 
-.main-nav ul li a.portfolio {
+.portfolio {
   width: 66px;
   height: 24px;
+  color: var(--accent-color-text);
 }
 
-.main-nav ul li a.contacts {
+.contacts {
   width: 67px;
   height: 24px;
+  color: var(--accent-color-text);
 }
 
 .address a {
