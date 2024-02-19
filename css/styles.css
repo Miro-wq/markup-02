@@ -1,10 +1,3 @@
-* {
-  /* resetare marigini etc, din cate am citit se pare ca e o practica buna...  */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --primary-color: #ffffff;
   --accent-color-iris: #4d5ae5;
@@ -20,15 +13,20 @@ body {
   background-color: var(--primary-color);
   font-style: normal;
   letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #e7e9fc;
+  background-color: var(--primary-color);
   display: flex; /* altfel nu reuseam sa le pozitinez sa arate cat de cat bine */
   justify-content: space-between; /* am incercat si fara, arata aiurea */
   align-items: center;
   height: 64px;
   text-align: left;
+  align-items: center;
 }
 
 header a {
@@ -41,6 +39,22 @@ header .studio {
   font-family: "Raleway";
   font-weight: 800;
   letter-spacing: 0.03em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-left: 156px;
 }
 
 .web {
@@ -67,26 +81,42 @@ header .studio {
 }
 
 .main-nav ul li {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .main-nav ul li:last-child {
   /* zicea Silviu profu' de treaba asta si am zis sa incerc */
-  margin-right: 0;
+  margin-right: 156px;
 }
 
-.main-nav ul li a {
-  text-decoration: none;
+.index {
+  width: 48px;
+  height: 24px;
   color: var(--accent-color-text);
   font-weight: 500;
-  font-size: 16px;
 }
 
-.address li {
+.portfolio {
+  width: 66px;
+  height: 24px;
+  color: var(--accent-color-text);
+  font-weight: 500;
+}
+
+.contacts {
+  width: 67px;
+  height: 24px;
+  color: var(--accent-color-text);
+  font-weight: 500;
+}
+
+.address a {
   color: var(--accent-color-description);
   font-weight: 400;
   letter-spacing: 0.02em;
-  align-items: center;
+}
+.address a:hover {
+  color: var(--accent-color-iris);
 }
 
 .hero {
@@ -109,35 +139,49 @@ header .studio {
   border-radius: 4px; /* asta e luat din layout, sper ca e ok */
 }
 
-.description ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around; /* mi-au murit 60% din neuroni pana am reusit sa gasesc o varianta sa il pozitionez */
-  padding: 50px 0;
+.button:active {
+  background-color: var(--button-color-filters);
 }
 
-.description ul li h3 {
-  color: var(--accent-color-text);
+.features h3 {
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 
-.description ul li p {
-  color: var(--accent-color-description);
+.features p {
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--accent-color-description);
 }
 
-.activities {
-  padding: 100px 0; /* la fel, fara nu arata ok, sper sa si fie ok */
+.features {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 24px;
 }
 
-.activities h2 {
-  color: var(--accent-color-text);
+.feature {
+  list-style: none;
+  justify-content: center;
+  width: 18%;
+}
+
+.what-are {
+  justify-content: center;
+  margin-bottom: 5%;
+  display: flex;
+  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -145,54 +189,67 @@ header .studio {
   text-align: center;
 }
 
-.activities ul {
+.images {
+  display: flex;
   list-style: none;
-  display: flex; /* idem, fara arata de parca e pozitionat cu picioarele */
-  justify-content: space-around; /* citeste mai sus pt detalii */
+  justify-content: center;
+  gap: 24px;
 }
 
-.activities ul li {
+.card {
+  background-color: var(--accent-color-cloud);
+  padding: 100px 0; /* la fel, fara nu e centrat cat de cat ok */
+  margin-top: 5%;
+}
+
+.our-team {
+  justify-content: center;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
 .team {
-  background-color: var(--accent-color-cloud);
-  padding: 100px 0; /* la fel, fara nu e centrat cat de cat ok */
-}
-
-.team h2 {
-  color: var(--accent-color-text);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.team h3 {
-  color: var(--accent-color-text);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.team ul {
+  display: flex;
   list-style: none;
-  display: flex; /* idem de mai sus */
-  justify-content: space-around; /* idem 8 */
+  justify-content: center;
+  padding: 0px 0px 32px 0px;
+  border-radius: 0px 0px 4px 4px;
+  gap: 24px;
 }
 
-.team ul p {
-  color: var(--accent-color-description);
-  font-size: 16px;
+.card ul {
+  font-family: Roboto;
+  font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
 }
 
+.card p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-member {
+  background-color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
 footer {
   background-color: var(--accent-color-text);
   padding: 50px 0; /* singura varianta care am gasit-o sa arata cat de cat bine */
@@ -205,6 +262,7 @@ footer p {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-left: 156px;
 }
 
 footer a {
@@ -221,16 +279,31 @@ footer .studio {
   text-decoration: none;
 }
 
-footer .web {
+.web-footer {
   color: var(--accent-color-iris);
   font-weight: 800; /* le-am pus si aici ca zici ca a intrat dracu in ele si nu vor sa preia greutatea */
   font-size: 18px;
   line-height: 21px;
 }
 
-footer .studio {
+.studio-footer {
   color: var(--accent-color-cloud);
   font-weight: 800; /* idem */
   font-size: 18px;
   line-height: 21px;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-left: 156px;
 }
