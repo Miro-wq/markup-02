@@ -21,8 +21,8 @@ body {
 
 header {
   background-color: var(--primary-color);
-  display: flex; /* altfel nu reuseam sa le pozitinez sa arate cat de cat bine */
-  justify-content: space-between; /* am incercat si fara, arata aiurea */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 64px;
   text-align: left;
@@ -85,7 +85,6 @@ header .studio {
 }
 
 .main-nav ul li:last-child {
-  /* zicea Silviu profu' de treaba asta si am zis sa incerc */
   margin-right: 156px;
 }
 
@@ -127,16 +126,30 @@ header .studio {
   text-align: center;
   background-color: var(--accent-color-text);
   color: #ffffff;
-  padding: 100px 0; /* fara padding nu arata ok */
+  padding: 100px 0;
 }
 
 .hero button {
-  padding: 10px 20px; /* la fel si aici, fara nu imi arata bine */
   background-color: var(--accent-color-iris);
   cursor: pointer;
   color: #fefefe;
   border: none;
-  border-radius: 4px; /* asta e luat din layout, sper ca e ok */
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  top: 428px;
+  left: 636px;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .button:active {
@@ -144,7 +157,7 @@ header .studio {
 }
 
 .features h3 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -153,7 +166,7 @@ header .studio {
 }
 
 .features p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -181,12 +194,13 @@ header .studio {
   justify-content: center;
   margin-bottom: 5%;
   display: flex;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--accent-color-text);
 }
 
 .images {
@@ -198,8 +212,19 @@ header .studio {
 
 .card {
   background-color: var(--accent-color-cloud);
-  padding: 100px 0; /* la fel, fara nu e centrat cat de cat ok */
+  padding: 100px 0;
   margin-top: 5%;
+}
+
+.card team-member1,
+.card team-member2,
+.card team-member3,
+.card team-member4 {
+  width: 360px;
+  height: 420px;
+  border: 1px solid var(--accent-color-filters);
+  padding: 0 0 32px 0;
+  text-align: center;
 }
 
 .our-team {
@@ -207,12 +232,13 @@ header .studio {
   display: flex;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--accent-color-text);
 }
 
 .team {
@@ -225,7 +251,7 @@ header .studio {
 }
 
 .card ul {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -234,12 +260,23 @@ header .studio {
 }
 
 .card p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--accent-color-description);
+}
+
+.card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--accent-color-text);
 }
 
 .team-member {
@@ -252,7 +289,7 @@ ul {
 }
 footer {
   background-color: var(--accent-color-text);
-  padding: 50px 0; /* singura varianta care am gasit-o sa arata cat de cat bine */
+  padding: 50px 0;
 }
 
 footer p {
@@ -281,14 +318,14 @@ footer .studio {
 
 .web-footer {
   color: var(--accent-color-iris);
-  font-weight: 800; /* le-am pus si aici ca zici ca a intrat dracu in ele si nu vor sa preia greutatea */
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
 }
 
 .studio-footer {
   color: var(--accent-color-cloud);
-  font-weight: 800; /* idem */
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
 }
