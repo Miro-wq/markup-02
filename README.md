@@ -9,9 +9,7 @@ This is a homework project for the **Full Stack Developer** course, focused on c
 - **README.md**: This file with project details.
 
  ### Built With
-
-- HTML
-- CSS
+[![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)
   
 
  ## Contributing
