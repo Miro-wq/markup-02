@@ -13,16 +13,6 @@ This is a homework project for the **Full Stack Developer** course, focused on c
 - HTML
 - CSS
   
- ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
- ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
  ## Contributing
 
